@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:backgroundTint="@color/dark"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter your Email"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/orange"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="10dp"
+
+            />
+        <EditText
+            android:id="@+id/pass_id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter your pass"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/orange"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="10dp"
+
+            />
+
+        <Button
+            android:id="@+id/submit_id"
+            android:layout_width="match_parent"
+
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/dark"
+            android:textColor="@color/orange"
+            android:text="Login"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_2"
+        android:orientation="vertical"
+        />
+        <TextView
+            android:id="@+id/output_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
